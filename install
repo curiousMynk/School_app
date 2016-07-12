@@ -1,0 +1,110 @@
+Script started on Sunday 10 July 2016 03:24:08 PM IST
+]0;mayank@Mayank: ~/work/school_appmayank@Mayank:~/work/school_app$ rails s[Kg paperclip school logo
+Running via Spring preloader in process 3722
+Could not find generator 'paperclip'. Maybe you meant 'generator', 'helper' or 'mailer'
+Run `rails generate --help` for more options.
+]0;mayank@Mayank: ~/work/school_appmayank@Mayank:~/work/school_app$ bundle install
+Using rake 11.2.2
+Using concurrent-ruby 1.0.2
+Using i18n 0.7.0
+Using minitest 5.9.0
+Using thread_safe 0.3.5
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using pkg-config 1.1.7
+Using rack 2.0.1
+Using nio4r 1.2.1
+Using websocket-extensions 0.1.2
+Using mime-types-data 3.2016.0521
+Using arel 7.0.0
+Using byebug 9.0.5
+Using coffee-script-source 1.10.0
+Using execjs 2.7.0
+Using method_source 0.8.2
+Using thor 0.19.1
+Using debug_inspector 0.0.2
+Using ffi 1.9.13
+Using multi_json 1.12.1
+Using rb-fsevent 0.9.7
+Using mimemagic 0.3.1
+Using puma 3.4.0
+Using bundler 1.12.4
+Using sass 3.4.22
+Using tilt 2.0.5
+Using spring 1.7.2
+Using sqlite3 1.3.11
+Using turbolinks-source 5.0.0
+Using tzinfo 1.2.2
+Using nokogiri 1.6.8
+Using rack-test 0.6.3
+Using sprockets 3.6.3
+Using websocket-driver 0.6.4
+Using mime-types 3.1
+Using coffee-script 2.4.1
+Using uglifier 3.0.0
+Using rb-inotify 0.9.7
+Using turbolinks 5.0.0
+Using activesupport 5.0.0
+Using loofah 2.0.3
+Using mail 2.6.4
+Using listen 3.0.8
+Using rails-dom-testing 2.0.1
+Using globalid 0.3.6
+Using activemodel 5.0.0
+Using climate_control 0.0.3
+Using jbuilder 2.5.0
+Using rails-html-sanitizer 1.0.3
+Using spring-watcher-listen 2.0.0
+Using activejob 5.0.0
+Using activerecord 5.0.0
+Using cocaine 0.5.8
+Using actionview 5.0.0
+Using paperclip 5.0.0
+Using actionpack 5.0.0
+Using actioncable 5.0.0
+Using actionmailer 5.0.0
+Using railties 5.0.0
+Using sprockets-rails 3.1.1
+Using coffee-rails 4.1.1
+Using jquery-rails 4.1.1
+Using web-console 3.3.1
+Using rails 5.0.0
+Using sass-rails 5.0.5
+[32mBundle complete! 16 Gemfile dependencies, 67 gems now installed.[0m
+[32mGems in the group production were not installed.[0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;mayank@Mayank: ~/work/school_appmayank@Mayank:~/work/school_app$ bundle installrails g paperclip school logo
+Running via Spring preloader in process 3816
+[1m[32m      create[0m  db/migrate/20160710095657_add_attachment_logo_to_schools.rb
+]0;mayank@Mayank: ~/work/school_appmayank@Mayank:~/work/school_app$ rails g paperclip school logo[15Pbundle installrails g paperclip school logos[Kg controller Schools[11Pke db:migrateils g model School name:string address_line_1::string address_line_2:string city:string state:string pincode:integer landline_nno_1:string landline_no_2:string fax:string website:string email_id:string board__id:string shifts:string contact_person:string mobile_no:integer hindi_name:strinng logo:attachment board:references[A[A[A[Ake db:migrate[K
+[K
+[K
+[K
+[K[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+== 20160710095657 AddAttachmentLogoToSchools: migrating =======================
+-- change_table(:schools, {})
+   -> 0.0056s
+== 20160710095657 AddAttachmentLogoToSchools: migrated (0.0057s) ==============
+
+]0;mayank@Mayank: ~/work/school_appmayank@Mayank:~/work/school_app$ bundle install
+Using rake 11.2.2
+Using concurrent-ruby 1.0.2
+Using i18n 0.7.0
+Using minitest 5.9.0
+Using thread_safe 0.3.5
+Using builder 3.2.2
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using pkg-config 1.1.7
+Using rack 2.0.1
+Using nio4r 1.2.1
+Using websocket-extensions 0.1.2
+Using mime-types-data 3.2016.0521
+Using arel 7.0.0
+Using byebug 9.0.5
+Using coffee-script-source 1.10.0
+Using execjs 2.7.0
+Using method_source 0.8.2
+Using thor 0.19.1
+Using commonj

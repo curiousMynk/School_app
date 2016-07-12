@@ -1,0 +1,44 @@
+
+<table>
+  
+  <tbody>
+    
+      <tr>
+        <td><%= image_tag school.logo.url(:med)  %></td>
+        <td><h1><%= school.name %></h1></td>
+        <td><p><%= school.address_line_1 %><%= ', '%>
+          <%= school.address_line_2 %></br>
+          <%= 'City'%>
+          <%= school.city %></br>
+          <%= 'State'%>
+          <%= school.state %></br>
+          <%= 'pin: '%>
+          <%= school.pincode %></br>
+          <%= 'Landline no: '%> 
+           <%= school.landline_no_1 %> <%= ', '%> 
+           <%= school.landline_no_2 %> 
+        </p></td>
+        <td><%= 'Fax: '%><%= school.fax %><br/><%= 'Website: '%><%= school.website %><br/><%= 'Email id:'%><%= school.email_id %><br/><%= 'Board id:' %><%= school.b_id %></td>
+        <td><p>
+            <%= 'Shifts: '%>
+          <%= school.shifts %></br>
+          <%= 'Contact person: '%>
+          <%= school.contact_person %></br>
+          <%= 'Mobile no: '%>
+          <%= school.mobile_no %></br>
+          <%= 'Hindi Name : '%>
+          <%= school.hindi_name %></p></td>
+        <td>
+  
+               <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      board_school_path(school),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+</td>
+      </tr>
+      
+    
+  </tbody>
+</table>
+

@@ -1,0 +1,108 @@
+<%= form_for([@board, @board.school.build], html: { multipart: true }) do |f| %>
+
+  
+ <div class="form-group">
+    <%= f.label :name, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :name, :class => 'form-control' %>
+
+    </div>
+
+
+<div class="form-group">
+    <%= f.label :address_line_1, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :address_line_1, :class => 'form-control' %>
+    </div>
+
+    <div class="form-group">
+    <%= f.label :address_line_2, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :address_line_2, :class => 'form-control' %>
+    </div>
+  
+  <div class="form-group">
+    <%= f.label :city, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :city, :class => 'form-control' %>
+    </div>
+  <div class="form-group">
+    <%= f.label :state, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :state, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+    <%= f.label :pincode, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :pincode, :class => 'form-control' %>
+    </div>
+  <div class="form-group">
+    <%= f.label :landline_no_1, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :landline_no_1, :class => 'form-control' %>
+    </div>
+    <div class="form-group">
+    <%= f.label :landline_no_2, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :landline_no_2, :class => 'form-control' %>
+    </div>
+  <div class="form-group">
+    <%= f.label :fax, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :fax, :class => 'form-control' %>
+    </div>
+  <div class="form-group">
+    <%= f.label :email_Id, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :email_id, :class => 'form-control' %>
+    </div>
+  <div class="form-group">
+    <%= f.label :website, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :website, :class => 'form-control' %>
+    </div>
+<div class="form-group">
+    <%= f.label :board_Id, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :b_id, :class => 'form-control' %>
+    </div>
+
+<div class="form-group">
+    <%= f.label :shifts, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :shifts, :class => 'form-control' %>
+    </div>    
+
+
+<div class="form-group">
+    <%= f.label :contact_person, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :contact_person, :class => 'form-control' %>
+    </div>
+
+    <div class="form-group">
+    <%= f.label :mobile_no, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :mobile_no, :class => 'form-control' %>
+    </div>
+  
+  <div class="form-group">
+    <%= f.label :hindi_name, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_area :hindi_name, :class => 'form-control' %>
+    </div>
+
+    <div class="form-group">
+    <%= f.label :logo, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.file_field :logo, :class => 'form-control' %>
+    </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                boards_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+<% end %>
